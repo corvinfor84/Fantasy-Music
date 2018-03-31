@@ -1,0 +1,165 @@
+body {
+	width: 100wh;
+	height: 90vh;
+	
+	background: linear-gradient(-45deg, #232938, #424f70, #bad1ba, #505150);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+h1,
+h6 {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	right: 0;
+	left: 0;
+}
+
+.panel, .panel-default, .panel-title, .panel-heading, .container {
+	background: rgba(70,100,110,0.1)!important;
+	width: 50%;
+	position: absolute;
+	top: 160px;
+	left: 25%;
+
+}
+
+.form-title {
+	background: rgba(78,32,93, 0.5);
+}
+
+.panel {
+	animation-name: spaceInUp;
+}
+
+
+/*.spaceInUp {
+  animation-name: spaceInUp;
+}*/
+
+@keyframes spaceInUp {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 0%;
+    transform: scale(.2) translate(0%, -200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform-origin: 50% 0%;
+    transform: scale(1) translate(0%, 0%);
+  }
+}
+
+.the-circles {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	/*background-color: red;*/
+	float: left;
+	margin: 4px;
+	position: relative;
+	top: 150px;
+	left: 30%;
+	border:1px solid silver;
+
+	background: linear-gradient(-45deg, #a00000, #6a34ad, #3770d3, #dde868);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+#the-fantasy-text {
+	font-size: 999%;
+	font-family: verdana;
+	font-weight: bold;
+	color: rgba(222, 224, 206, 0.4);
+	position: absolute;
+	top: 70px;
+	left: 29.8%;
+	z-index: 2;
+	text-transform: capitalize;
+	letter-spacing: 17px;
+}
+
+#fantasy-box {
+	position: absolute;
+	top: 95px;
+	left: 30%;
+	width: 540px;
+	height: 100px;
+	border:6px solid rgba(212,222,204,0.4);
+	border-radius: 15px;
+}
+
+.the-letters {
+	font-size: 890%;
+	font-family: verdana;
+	font-weight: bold;
+	color: rgba(222, 224, 206, 0.3);
+	position: absolute;
+	z-index: 2;
+}
+
+#the-m {
+	top: 195px;
+	left: 30.9%;
+}
+#the-u {
+	top: 195px;
+	left: 39.3%;
+}
+#the-s {
+	top: 195px;
+	left: 47.4%;
+}
+#the-i {
+	top: 195px;
+	left: 55.9%;
+}
+#the-c {
+	top: 195px;
+	left: 62.9%;
+}

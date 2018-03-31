@@ -1,0 +1,59 @@
+<style screen="media">
+
+	body {
+
+			background-image: url("http://www.vanessaturner.com/wp-content/uploads/2016/09/grey-background-12.jpg");
+			background-size: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		
+</style>
+
+<div class="force-block"> 
+{{#each fml}} 	
+		<div id="main-bio-block">
+			<div class="performer-image"><img src="{{this.image}}" class="user-image">
+			</div>
+				<div class="info" id="info-modal">
+				<p><strong>Genre:</strong> {{this.genre}}</p>
+				<p><strong>Cost:</strong> ${{this.contractCost}}</p>
+				<p><strong>Chart Position:</strong> {{this.chartPosition}}</p> 
+				<p><strong>Play Count:</strong> {{this.playCount}}</p> 
+				<p><strong>Listeners:</strong> {{this.listener}}</p>    
+				</div>
+						<div id="user-name"><p>{{this.handle}}</p></div>
+								<div class="modal-btn-1" id="bio-modal" onclick="toggleinfo('#info-{{@index}}')"><p>About Artist</p></div>
+										<div class="modal-btn" data-id="{{id}}" data-signed="{{taken}}" id="accolades-{{@index}}" value={{this.id}}>
+										<p>
+										{{#if taken}}SIGNED!{{else}}Sign Artist{{/if}}
+										</p></div>
+
+											<div class="modal-info-box" id="info-{{@index}}">
+												<span class="close" onclick="toggleinfo('#info-{{@index}}')">
+												&times;
+												</span>
+												<div class="info-content">
+													<p>{{this.bio}}</p>
+												</div>
+											</div>
+
+		</div>
+{{/each}}		
+
+</div>
+		
+
+
+
+		<script type="text/javascript">
+		
+
+		
+
+        
+
+
+			
+		</script>

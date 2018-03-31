@@ -1,0 +1,56 @@
+<style screen="media">
+		body {
+			padding: 0px;
+			margin: 0px;
+			background-color: rgb(0,0,0);  
+			background-image: linear-gradient(-45deg, hsla(0,0%,0%,0), hsla(0,0%,0%,.05) );
+			background-size: 5px;
+
+			}
+</style>
+
+<div id="nav-main">
+	 
+	</div>
+	
+	<div id="set-container">
+		<div id="user-music-label-name"><p id="user-label-name">{{#each fml}} {{labelName}}{{/each}}</p></div>
+		 
+		 <div id="select-container">
+			 <table id="base">
+			 	<tr>
+				 	<th>Genre</th>
+				 	<th>Artist Name</th>
+				 	<th>Chart Position</th>
+				 	<th>Contract Cost</th>
+				 	<th>Cover</th>
+				 	<th>Remove</th>
+				</tr>
+				{{#each fml}}
+				<tr>
+					<td>{{this.genre}}</td>
+					<td>{{this.handle}}</td>
+					<td>{{this.chartPosition}}</td>
+					<td class="artCost" value="{{this.contractCost}}">{{this.contractCost}}</td>
+					<td>
+						<img style="width:35px;height:35px;" src="{{image}}">
+					</td>
+					<td><span class="remover" data-id="{{id}}">&#9949;</span></td>
+				</tr>
+				{{/each}}
+			</table>
+				
+		</div>
+
+			<div class="admin-info-box">
+				<ul>
+					<li><strong class="info-text-head">BUDGET LEFT</strong><p id="budget">$250</p></li>
+					<li><strong class="info-text-head">PLAY COUNT</strong><p id="total-plays">1209292</p></li>
+					<li><strong class="info-text-head">LISTENERS</strong><p id="total-listeners">4633983</p></li>
+					<button id="update-plays">Update Plays</button>
+					<li><strong class="info-text-head"></strong><p></p></li>
+
+				</ul>
+
+			</div>
+	</div>
