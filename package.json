@@ -1,7 +1,7 @@
 {
-  "name": "psc_open_league",
+  "name": "fml_league",
   "version": "1.0.0",
-  "description": "psc open league database",
+  "description": "fml league database",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
